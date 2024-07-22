@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Typed from 'typed.js';
+import React from'react';
 
 function App() {
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['<i>Portfolio</i> website.',],
+      typeSpeed: 50,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1 className='text-7xl font-extrabold '>This is my <span ref={el} /></h1>
+
+
+    </>
   );
 }
 
