@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
+import logoImage from "../../assets/logo.png";
 
 export default function Navbar() {
   const el = React.useRef(null);
@@ -17,50 +18,35 @@ export default function Navbar() {
   }, []);
   return (
     <>
-      <nav className="min-w-full  bg-transparent dark:text-white dark:bg-gray-950">
-        <div className="navItems flex items-center justify-center max-w-6xl mx-auto px-4">
-          <div className="logo">
-            <h1
-              className="text-4xl font-bold m-2 font-mono mx-4 transition-all hover:cursor-none "
-              ref={el}
-            ></h1>
-          </div>
-          <div className="navLinks">
-            <ul className="flex justify-end">
-              <li className="m-2 text-xl font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
-                About
-              </li>
-              <li className="m-2 text-xl font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
-                Projects
-              </li>
-              <li className="m-2 text-xl font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
-                Contact
-              </li>
-            </ul>
+      <nav className=" bg-transparent dark:text-white dark:bg-slate-800">
+        <div className="max-w-6xl mx-auto px-4 ">
+          <div className="navItems flex items-center justify-center">
+            <div className="logo">
+              <h1
+                className="text-4xl font-bold my-2 font-mono mx-6 transition-all hover:cursor-none "
+                ref={el}
+              ></h1>
+            </div>
+            <div className="navLinks hidden lg:flex ">
+              <ul className="flex justify-end">
+                <li className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
+                  About
+                </li>
+                <li className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
+                  Projects
+                </li>
+                <li className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
+                  Contact
+                </li>
+              </ul>
+            </div>
+            <div className="mobile sm:block lg:hidden">
+              <div className="navLinks">
+                <img src={logoImage} className="w-8 h-8 rounded-full" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-        {/* <div className="mobile md:hidden">
-          <div className="logo">
-            <h1
-              className="text-4xl font-bold m-2 font-mono mx-4 transition-all hover:cursor-none "
-              ref={el}
-            ></h1>
-          </div>
-          <div className="navLinks">
-            <ul className="flex justify-end">
-              <li className="m-2 text-xl font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
-                About
-              </li>
-              <li className="m-2 text-xl font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
-                Projects
-              </li>
-              <li className="m-2 text-xl font-mono hover:cursor-pointer hover:text-gray-600 transition-all">
-                Contact
-              </li>
-            </ul>
-          </div> */}
-        
-        
       </nav>
     </>
   );
