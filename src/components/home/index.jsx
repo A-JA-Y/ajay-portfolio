@@ -37,7 +37,7 @@ const Home = () => {
     <>
       <div className="home  ">
         <div className="container min-w-full flex flex-col items-center justify-center dark:bg-slate-900 my-1 py-8 bg-slate-300 rounded-md">
-          <div className="heading lg:text-6xl sm:text-4xl font-mono lg:font-extrabold sm:font-bold  my-4 py-4">
+          <div className="heading text-6xl  font-mono lg:font-extrabold sm:font-bold  my-4 py-4">
             <h1>
               Hi! <br /> I am Ajay.
             </h1>
