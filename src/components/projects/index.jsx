@@ -48,7 +48,7 @@ function Projects() {
         <h1 className="text-center py-4 mb-4 text-5xl font-extrabold ">
           Projects
         </h1>
-        <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 gap-3  p-4">
+        <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 sm:w-full gap-3  p-4">
           {projects.map((project, index) => (
             <div
               key={index}
