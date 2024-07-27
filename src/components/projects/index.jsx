@@ -52,7 +52,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project dark:bg-gray-700 rounded-md p-2 flex flex-col items-center"
+              className="project dark:bg-gray-700 rounded-md p-2 w-full flex flex-col items-center"
             >
               <h2 className="text-3xl font-bold text-center my-2">
                 {project.projectName}
