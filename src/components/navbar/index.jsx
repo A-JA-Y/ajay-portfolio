@@ -2,7 +2,7 @@ import React from "react";
 import Typed from "typed.js";
 import logoImage from "../../assets/logo.png";
 
-export default function Navbar() {
+export default function Navbar({ scrollToSection, refs }) {
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -16,6 +16,7 @@ export default function Navbar() {
       typed.destroy();
     };
   }, []);
+
   return (
     <>
       <nav className=" bg-transparent dark:text-white dark:bg-slate-800 rounded">
@@ -29,13 +30,22 @@ export default function Navbar() {
             </div>
             <div className="navLinks hidden lg:flex ">
               <ul className="flex justify-end">
-                <li className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all">
+                <li
+                  className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  onClick={() => scrollToSection(refs.aboutRef)}
+                >
                   About
                 </li>
-                <li className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all">
+                <li
+                  className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  onClick={() => scrollToSection(refs.projectRef)}
+                >
                   Projects
                 </li>
-                <li className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all">
+                <li
+                  className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  onClick={() => scrollToSection(refs.contactRef)}
+                >
                   Contact
                 </li>
               </ul>
