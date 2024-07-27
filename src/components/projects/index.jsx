@@ -52,7 +52,7 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project dark:bg-gray-700 rounded-md p-2 flex flex-col items-center"
+            className="project bg-gray-400 rounded-md p-2 flex flex-col items-center"
           >
             <h2 className="text-3xl font-bold text-center my-2">
               {project.projectName}
@@ -62,7 +62,7 @@ function Projects() {
               alt={project.projectName}
               className="w-full h-auto max-w-xs hover:scale-95 transition-transform"
             />
-            <p className="h-10 my-1 text-center">{project.projectDescription}</p>
+            <p className="h-14 my-1 text-center">{project.projectDescription}</p>
             <div className="project-tags flex flex-wrap justify-center">
               {project.projectTags.map((tag, index) => (
                 <span
