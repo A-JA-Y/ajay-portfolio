@@ -69,7 +69,7 @@ function Projects() {
                   key={index}
                   className="mx-1 my-1 text-xl font-medium"
                 >
-                  {tag}
+                  {tag}, 
                 </span>
               ))}
             </div>
