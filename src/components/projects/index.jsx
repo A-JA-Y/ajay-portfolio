@@ -42,43 +42,59 @@ function Projects() {
       projectTags: ["React", "Tailwind CSS", "Javascript"],
     },
   ];
+
   return (
-    <>
-      <div className="about min-w-full bg-slate-300 dark:bg-gray-900 dark:text-white my-1 rounded-md font-mono py-6">
-        <h1 className="text-center py-4 mb-4 text-5xl font-extrabold ">
-          Projects
-        </h1>
-        <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 sm:w-full gap-3  p-4">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="project dark:bg-gray-700 rounded-md p-2 w-full  flex flex-col items-center"
-            >
-              <h2 className="text-3xl font-bold text-center my-2">
-                {project.projectName}
-              </h2>
-              <img src={project.projectImage} alt={project.projectName} className="hover:scale-95 transition-transform" />
-              <p className="h-10 my-1">{project.projectDescription}</p>
-              <div className="project-tags">
-                {project.projectTags.map((tag, index) => (
-                  <span key={index} className="mx-1 my-1 text-xl font-medium">{tag},</span>
-                ))}
-              </div>
-              <a href={project.projectLink} target="_blank" rel="noreferrer">
-                <button className="w-44 rounded h-12 bg-gray-700 text-white m-2  dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all ">
-                  View Project
-                </button>
-              </a>
-              <a href={project.githubRepo} target="_blank" rel="noreferrer">
-              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all ">
-                  View Code
-                </button>
-              </a>
+    <div className="min-w-full bg-slate-300 dark:bg-gray-900 dark:text-white my-1 rounded-md font-mono py-6">
+      <h1 className="text-center py-4 mb-4 text-5xl font-extrabold">
+        Projects
+      </h1>
+      <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 gap-3 p-4">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="project dark:bg-gray-700 rounded-md p-2 flex flex-col items-center"
+          >
+            <h2 className="text-3xl font-bold text-center my-2">
+              {project.projectName}
+            </h2>
+            <img
+              src={project.projectImage}
+              alt={project.projectName}
+              className="w-full h-auto max-w-xs hover:scale-95 transition-transform"
+            />
+            <p className="h-10 my-1 text-center">{project.projectDescription}</p>
+            <div className="project-tags flex flex-wrap justify-center">
+              {project.projectTags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="mx-1 my-1 text-xl font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
-          ))}
-        </div>
+            <a
+              href={project.projectLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+                View Project
+              </button>
+            </a>
+            <a
+              href={project.githubRepo}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+                View Code
+              </button>
+            </a>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
 
