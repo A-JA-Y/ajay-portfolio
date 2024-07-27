@@ -5,6 +5,8 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import { useRef } from "react";
+import Top from "./components/wa-top-btn/toTop";
+import WaMe from "./components/wa-top-btn/whatsapp"
 
 function App() {
   const aboutRef = useRef(null);
@@ -29,6 +31,9 @@ function App() {
       <div ref={contactRef}>
       <Contact/>
       </div>
+      <Top/>
+      <WaMe/>
+
     </>
   );
 }

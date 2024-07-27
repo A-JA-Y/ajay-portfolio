@@ -57,7 +57,7 @@ function Projects() {
               <h2 className="text-3xl font-bold text-center my-2">
                 {project.projectName}
               </h2>
-              <img src={project.projectImage} alt={project.projectName} />
+              <img src={project.projectImage} alt={project.projectName} className="hover:scale-95 transition-transform" />
               <p className="h-10 my-1">{project.projectDescription}</p>
               <div className="project-tags">
                 {project.projectTags.map((tag, index) => (
