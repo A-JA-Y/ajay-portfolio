@@ -22,7 +22,7 @@ function Projects() {
       projectLink: "https://a-ja-y.github.io/GitHub_Api_project/",
       githubRepo: "https://github.com/A-JA-Y/GitHub_Api_project",
       projectImage: two,
-      projectTags: ["React", "CSS", "Javascript", "Github-API"],
+      projectTags: ["HTML", "CSS", "Javascript", "Github-API"],
     },
     {
       projectName: "AddToFavorite",
@@ -60,7 +60,7 @@ function Projects() {
             <img
               src={project.projectImage}
               alt={project.projectName}
-              className="w-full h-auto max-w-xs hover:scale-95 transition-transform"
+              className="w-full h-auto max-w-xs rounded-md  hover:rounded-2xl cursor-pointer hover:scale-95 transition-transform"
             />
             <p className="h-14 my-1 text-center">{project.projectDescription}</p>
             <div className="project-tags flex flex-wrap justify-center">
@@ -78,7 +78,7 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all hover:rounded-3xl">
                 View Project
               </button>
             </a>
@@ -87,7 +87,7 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 hover:rounded-3xl transition-all">
                 View Code
               </button>
             </a>
