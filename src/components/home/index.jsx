@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 const Home = () => {
 
   const downloadCv = () => {
-    window.open("https://drive.google.com/file/d/1GTXAVdkIbQG0xjabDoURNFtVmx8xKTZL/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1ZjKGUcUUCt6DwzspkegzLke5r4KGdci_/view?usp=sharing", "_blank");
   }
   const el = React.useRef(null);
 
