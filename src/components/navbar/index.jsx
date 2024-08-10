@@ -19,7 +19,7 @@ export default function Navbar({ scrollToSection, refs }) {
 
   return (
     <>
-      <nav className=" bg-transparent dark:text-white dark:bg-slate-800 rounded">
+      <nav className=" bg-transparent dark:text-white dark:bg-slate-800 rounded sticky top-0 shadow-xl">
         <div className="max-w-6xl mx-auto px-4 ">
           <div className="navItems flex items-center justify-center">
             <div className="logo">

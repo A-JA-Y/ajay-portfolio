@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
       <div className="home  ">
-        <div className="container min-w-full flex flex-col items-center justify-center dark:bg-slate-900 my-1 py-8 bg-slate-300 rounded-md">
+        <div className="container min-w-full flex flex-col items-center justify-center dark:text-white dark:bg-slate-900 my-1 py-8 bg-slate-300 rounded-md">
           <div className="heading text-8xl  font-mono lg:font-extrabold sm:font-bold  my-4 py-4">
             <h1>
               Hi! <br /> I am <br /> Ajay.
