@@ -14,7 +14,7 @@ import { CiLocationOn } from "react-icons/ci";
 function Contact() {
   return (
     <>
-      <div className="about min-w-full bg-slate-300 dark:bg-gray-900 dark:text-white rounded-md font-mono py-6">
+      <div className="about min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white rounded-md font-mono py-6">
         <h1 className="text-center py-4 mb-4 text-5xl font-extrabold ">Contact Me</h1>
         <div className="contactInfo">
           <div className="icons flex  justify-center items-center my-3 mx-4">

@@ -44,15 +44,15 @@ function Projects() {
   ];
 
   return (
-    <div className="min-w-full bg-slate-300 dark:bg-gray-900 dark:text-white my-1 rounded-md font-mono py-6">
+    <div className="min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white my-1 rounded-md font-mono py-6">
       <h1 className="text-center py-4 mb-4 text-5xl font-extrabold">
         Projects
       </h1>
-      <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 gap-3 p-4">
+      <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 gap-6 p-4">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project bg-gray-400 rounded-md p-2 flex flex-col items-center"
+            className="project bg-gray-500 rounded-md p-2  flex flex-col items-center"
           >
             <h2 className="text-3xl font-bold text-center my-2">
               {project.projectName}

@@ -19,7 +19,7 @@ export default function Navbar({ scrollToSection, refs }) {
 
   return (
     <>
-      <nav className=" bg-transparent dark:text-white dark:bg-slate-800 rounded sticky top-0 shadow-xl z-50">
+      <nav className=" bg-slate-300 bg-opacity-80  dark:text-white dark:bg-zinc-800 rounded-b-md sticky top-0 shadow-xl z-50">
         <div className="max-w-6xl mx-auto px-4 ">
           <div className="navItems flex items-center justify-center">
             <div className="logo">
@@ -31,19 +31,19 @@ export default function Navbar({ scrollToSection, refs }) {
             <div className="navLinks hidden lg:flex ">
               <ul className="flex justify-end">
                 <li
-                  className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  className="my-2 mx-3 text-xl drop-shadow-md  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
                   onClick={() => scrollToSection(refs.aboutRef)}
                 >
                   About
                 </li>
                 <li
-                  className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  className="my-2 mx-3 text-xl drop-shadow-md  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
                   onClick={() => scrollToSection(refs.projectRef)}
                 >
                   Projects
                 </li>
                 <li
-                  className="my-2 mx-3 text-xl  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  className="my-2 mx-3 text-xl drop-shadow-md  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
                   onClick={() => scrollToSection(refs.contactRef)}
                 >
                   Contact

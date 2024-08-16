@@ -14,7 +14,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 function About() {
   return (
     <>
-      <div className="about min-w-full bg-slate-300 dark:bg-gray-900 dark:text-white rounded-md font-mono py-6">
+      <div className="about min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white rounded-md font-mono py-6">
         <h1 className="text-center py-4 mb-4 text-5xl font-extrabold ">
           About Me
         </h1>
