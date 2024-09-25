@@ -38,6 +38,7 @@ function Projects() {
       projectDescription:
         "A school website of showcasing the school's facilities and activities",
       projectLink: "https://school-website-sooty.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/schoolWebsite",
       projectImage: four,
       projectTags: ["React", "Tailwind CSS", "Javascript"],
     },
