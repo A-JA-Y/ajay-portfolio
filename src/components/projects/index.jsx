@@ -3,6 +3,7 @@ import one from "../../assets/home_comfort.png";
 import two from "../../assets/github_api.png";
 import three from "../../assets/add_to_fav.png";
 import four from "../../assets/school_web.png";
+import five from "../../assets/five.png";
 
 function Projects() {
   const projects = [
@@ -40,6 +41,15 @@ function Projects() {
       projectLink: "https://school-website-sooty.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/schoolWebsite",
       projectImage: four,
+      projectTags: ["React", "Tailwind CSS", "Javascript"],
+    },
+    {
+      projectName: "UniqueKhushboo.com",
+      projectDescription:
+        "A perfume website that showcases the unique perfumes of Khushboo",
+      projectLink: "https://anime-js-project-eight.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/anime_js_project",
+      projectImage: five,
       projectTags: ["React", "Tailwind CSS", "Javascript"],
     },
   ];
