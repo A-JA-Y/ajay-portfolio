@@ -4,6 +4,7 @@ import two from "../../assets/github_api.png";
 import three from "../../assets/add_to_fav.png";
 import four from "../../assets/school_web.png";
 import five from "../../assets/five.png";
+import six from "../../assets/six.png";
 
 function Projects() {
   const projects = [
@@ -52,6 +53,17 @@ function Projects() {
       projectImage: five,
       projectTags: ["React", "Tailwind CSS", "Javascript"],
     },
+    {
+      projectName: "FreeGameZ",
+      projectDescription:
+        "A gaming website that showcases the latest games that are available for free officially",
+      projectLink: "https://free-games-kappa.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/free-games",
+      projectImage: six,
+      projectTags: ["React", "Tailwind CSS", "Javascript"],
+    }
+    
+
   ];
 
   return (
