@@ -5,6 +5,8 @@ import three from "../../assets/add_to_fav.png";
 import four from "../../assets/school_web.png";
 import five from "../../assets/five.png";
 import six from "../../assets/six.png";
+import seven from "../../assets/seven.png";
+import eight from "../../assets/eight.png";
 
 function Projects() {
   const projects = [
@@ -61,7 +63,26 @@ function Projects() {
       githubRepo: "https://github.com/A-JA-Y/free-games",
       projectImage: six,
       projectTags: ["React", "Tailwind CSS", "Javascript"],
-    }
+    },
+    {
+      projectName: "Pass-My-Word",
+      projectDescription:
+        "A password manager web page that helps you to store your passwords securely",
+      projectLink: "https://pass-my-words.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/pass-my-words",
+      projectImage: seven,
+      projectTags: ["React", "Tailwind CSS", "Javascript","localstorage"],
+    },
+    {
+      projectName: "Weather-App",
+      projectDescription:
+        "A weather app that helps you to know the weather of any city in the world",
+      projectLink: "https://weather-app-roan-xi-81.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/Weather_App",
+      projectImage: eight,
+      projectTags: ["React", "Tailwind CSS", "Javascript"],
+    },
+
     
 
   ];
