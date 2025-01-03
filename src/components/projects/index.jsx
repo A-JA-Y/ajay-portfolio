@@ -10,6 +10,7 @@ import eight from "../../assets/eight.png";
 
 function Projects() {
   const projects = [
+    // projects array remains same
     {
       projectName: "homeComfort",
       projectDescription:
@@ -82,9 +83,6 @@ function Projects() {
       projectImage: eight,
       projectTags: ["React", "Tailwind CSS", "Javascript"],
     },
-
-    
-
   ];
 
   return (
@@ -96,7 +94,9 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project bg-gray-500 rounded-md p-2  flex flex-col items-center"
+            // Add neumorphism-like Tailwind classes below
+            className="project relative bg-gray-300 dark:bg-zinc-700 p-4 m-2 rounded-2xl shadow-inner
+                       hover:shadow-xl transition-shadow flex flex-col items-center"
           >
             <h2 className="text-3xl font-bold text-center my-2">
               {project.projectName}
@@ -104,16 +104,18 @@ function Projects() {
             <img
               src={project.projectImage}
               alt={project.projectName}
-              className="w-full h-auto max-w-xs rounded-md  hover:rounded-2xl cursor-pointer hover:scale-95 transition-transform"
+              className="w-full h-auto max-w-xs rounded-xl hover:scale-95 transition-transform"
             />
-            <p className="h-14 my-1 text-center">{project.projectDescription}</p>
+            <p className="my-2 text-center leading-relaxed">
+              {project.projectDescription}
+            </p>
             <div className="project-tags flex flex-wrap justify-center">
-              {project.projectTags.map((tag, index) => (
+              {project.projectTags.map((tag, i) => (
                 <span
-                  key={index}
-                  className="mx-1 my-1 text-xl font-medium"
+                  key={i}
+                  className="mx-1 my-1 text-xl font-medium leading-relaxed"
                 >
-                  {tag}, 
+                  {tag},
                 </span>
               ))}
             </div>
@@ -122,7 +124,7 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all hover:rounded-3xl">
+              <button className="w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
                 View Project
               </button>
             </a>
@@ -131,7 +133,7 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="w-44 rounded h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 dark:text-white drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 hover:rounded-3xl transition-all">
+              <button className="w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
                 View Code
               </button>
             </a>

@@ -38,10 +38,10 @@ function Contact() {
             </a>
           </div>
           <div className="info p-3">
-            <span className="call text-xl font-medium flex items-center hover:scale-105 hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">Call me:</h1><FaPhoneAlt/><h1>+91-9260967689</h1></span>
-            <span className="mail text-xl font-medium flex items-center hover:scale-105 hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">E-mail:</h1><CiMail/><h1><a href="mailtoajay7007@gmail.com">mailtoajay7007@gmail.com</a></h1></span>
-            <span className="whatsapp text-xl font-medium flex items-center hover:scale-105 hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">Whatsapp:</h1><FaWhatsapp/><h1><a href="https://wa.link/hed8v6">Click here</a></h1></span>
-            <span className="address text-xl font-medium flex items-center hover:scale-105 hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">Address:</h1><CiLocationOn/><h1>Greater Noida, 201310, U.P., India</h1></span>
+            <span className="call text-xl font-medium flex items-center   hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">Call me:</h1><FaPhoneAlt/><h1>+91-9260967689</h1></span>
+            <span className="mail text-xl font-medium flex items-center  hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">E-mail:</h1><CiMail/><h1><a href="mailtoajay7007@gmail.com">mailtoajay7007@gmail.com</a></h1></span>
+            <span className="whatsapp text-xl font-medium flex items-center  hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">Whatsapp:</h1><FaWhatsapp/><h1><a href="https://wa.link/hed8v6">Click here</a></h1></span>
+            <span className="address text-xl font-medium flex items-center  hover:text-yellow-600 transition-all justify-center my-2 cursor-pointer"><h1 className="mx-2">Address:</h1><CiLocationOn/><h1>Greater Noida, 201310, U.P., India</h1></span>
           </div>
         </div>
       </div>
