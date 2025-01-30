@@ -10,7 +10,6 @@ import eight from "../../assets/eight.png";
 
 function Projects() {
   const projects = [
-    // projects array remains same
     {
       projectName: "homeComfort",
       projectDescription:
@@ -72,7 +71,7 @@ function Projects() {
       projectLink: "https://pass-my-words.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/pass-my-words",
       projectImage: seven,
-      projectTags: ["React", "Tailwind CSS", "Javascript","localstorage"],
+      projectTags: ["React", "Tailwind CSS", "Javascript", "localstorage"],
     },
     {
       projectName: "Weather-App",
@@ -86,19 +85,18 @@ function Projects() {
   ];
 
   return (
-    <div className="min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white my-1 rounded-md font-mono py-6">
-      <h1 className="text-center py-4 mb-4 text-5xl font-extrabold">
+    <div className="min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white my-1 rounded-md font-mono py-6 px-4">
+      <h1 className="text-center py-4 mb-4 text-3xl md:text-5xl font-extrabold">
         Projects
       </h1>
-      <div className="projects grid lg:grid-cols-2 sm:grid-cols-1 gap-6 p-4">
+      <div className="projects grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
         {projects.map((project, index) => (
           <div
             key={index}
-            // Add neumorphism-like Tailwind classes below
             className="project relative bg-gray-300 dark:bg-zinc-700 p-4 m-2 rounded-2xl shadow-inner
                        hover:shadow-xl transition-shadow flex flex-col items-center"
           >
-            <h2 className="text-3xl font-bold text-center my-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-center my-2">
               {project.projectName}
             </h2>
             <img
@@ -113,27 +111,19 @@ function Projects() {
               {project.projectTags.map((tag, i) => (
                 <span
                   key={i}
-                  className="mx-1 my-1 text-xl font-medium leading-relaxed"
+                  className="mx-1 my-1 text-sm md:text-xl font-medium leading-relaxed"
                 >
                   {tag},
                 </span>
               ))}
             </div>
-            <a
-              href={project.projectLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+            <a href={project.projectLink} target="_blank" rel="noreferrer">
+              <button className="w-full md:w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
                 View Project
               </button>
             </a>
-            <a
-              href={project.githubRepo}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+            <a href={project.githubRepo} target="_blank" rel="noreferrer">
+              <button className="w-full md:w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
                 View Code
               </button>
             </a>
