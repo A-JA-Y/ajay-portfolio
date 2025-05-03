@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/dp.jpg";
 
 export default function Navbar({ scrollToSection, refs }) {
   const el = React.useRef(null);
