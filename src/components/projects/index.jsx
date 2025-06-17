@@ -1,19 +1,21 @@
 import React from "react";
 import one from "../../assets/home_comfort.png";
 import two from "../../assets/github_api.png";
-import three from "../../assets/add_to_fav.png";
+import three from "../../assets/GTA-VI.png";
 import four from "../../assets/school_web.png";
 import five from "../../assets/five.png";
 import six from "../../assets/six.png";
 import seven from "../../assets/seven.png";
 import eight from "../../assets/eight.png";
+import nine from "../../assets/nine.png";
+import ten from "../../assets/ten.png";
 
 function Projects() {
   const projects = [
     {
       projectName: "homeComfort",
       projectDescription:
-        "A furniture website that helps you find the best home comfort solutions",
+        "A furniture website that helps you find the best home comfort solutions.",
       projectLink: "https://first-app-beige.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/HomeComfort-Furniture-website-",
       projectImage: one,
@@ -29,18 +31,18 @@ function Projects() {
       projectTags: ["HTML", "CSS", "Javascript", "Github-API"],
     },
     {
-      projectName: "AddToFavorite",
+      projectName: "Gta VI landing page",
       projectDescription:
-        "AddToFavorite is a simple project that allows you to add your favorite items to a list.",
-      projectLink: "https://add-to-fav-five.vercel.app/",
-      githubRepo: "https://github.com/A-JA-Y/add-to-fav",
+        "Gta VI landing page is a simple project that showcases the landing page for the highly anticipated game.",
+      projectLink: "https://gta-6-web.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/GTA6-Web",
       projectImage: three,
-      projectTags: ["React", "Tailwind CSS", "Javascript", "Rest-API"],
+      projectTags: ["React", "Tailwind CSS", "Javascript", "GSAP"],
     },
     {
       projectName: "School website",
       projectDescription:
-        "A school website of showcasing the school's facilities and activities",
+        "A school website of showcasing the school's facilities and activities.",
       projectLink: "https://school-website-sooty.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/schoolWebsite",
       projectImage: four,
@@ -49,7 +51,7 @@ function Projects() {
     {
       projectName: "UniqueKhushboo.com",
       projectDescription:
-        "A perfume website that showcases the unique perfumes of Khushboo",
+        "A perfume website that showcases the unique perfumes of a startup named UniqueKhushboo.com ",
       projectLink: "https://anime-js-project-eight.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/anime_js_project",
       projectImage: five,
@@ -58,7 +60,7 @@ function Projects() {
     {
       projectName: "FreeGameZ",
       projectDescription:
-        "A gaming website that showcases the latest games that are available for free officially",
+        "A gaming website that showcases the latest games that are available for free officially.",
       projectLink: "https://free-games-kappa.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/free-games",
       projectImage: six,
@@ -67,7 +69,7 @@ function Projects() {
     {
       projectName: "Pass-My-Word",
       projectDescription:
-        "A password manager web page that helps you to store your passwords securely",
+        "A password manager web page that helps you to store your passwords securely.",
       projectLink: "https://pass-my-words.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/pass-my-words",
       projectImage: seven,
@@ -76,12 +78,30 @@ function Projects() {
     {
       projectName: "Weather-App",
       projectDescription:
-        "A weather app that helps you to know the weather of any city in the world",
+        "A weather app that helps you to know the weather of any city in the world.",
       projectLink: "https://weather-app-roan-xi-81.vercel.app/",
       githubRepo: "https://github.com/A-JA-Y/Weather_App",
       projectImage: eight,
       projectTags: ["React", "Tailwind CSS", "Javascript"],
     },
+    {
+      projectName: "AI•AnimeArt•Generator",
+      projectDescription:
+        "A web application that uses Gemini AI to generate anime-style artwork.",
+      projectLink: "https://a-ja-y.github.io/AI-AnimeArt-Generator/",
+      githubRepo: "https://github.com/A-JA-Y/AI-AnimeArt-Generator",
+      projectImage: nine,
+      projectTags: ["HTML", "CSS", "Javascript","Next Js", "Gemini AI", "Rest-API"],
+    },
+    {
+      //project skeleton for future projects
+      projectName: "Upcoming project",
+      projectDescription: "Project description will be attached here , stay tuned!.. Its in progress.",
+      projectLink: "https://itzajay.live/",
+      githubRepo: "https://github.com/A-JA-Y/",
+      projectImage: ten,
+      projectTags: ["taech stack will be attached here", "soon", "stay tuned!."],
+    }
   ];
 
   return (
@@ -102,9 +122,9 @@ function Projects() {
             <img
               src={project.projectImage}
               alt={project.projectName}
-              className="w-full h-auto max-w-xs rounded-xl hover:scale-95 transition-transform"
+              className="w-[30em] h-[10em] max-w-xs rounded-xl hover:scale-95 transition-transform"
             />
-            <p className="my-2 text-center leading-relaxed">
+            <p className="my-1 text-center leading-relaxed">
               {project.projectDescription}
             </p>
             <div className="project-tags flex flex-wrap justify-center">
@@ -113,17 +133,19 @@ function Projects() {
                   key={i}
                   className="mx-1 my-1 text-sm md:text-xl font-medium leading-relaxed"
                 >
-                  {tag},
+                  <ol className="   text-gray-600 dark:text-gray-300">
+                    <li >{tag}</li>
+                  </ol>
                 </span>
               ))}
             </div>
             <a href={project.projectLink} target="_blank" rel="noreferrer">
-              <button className="w-full md:w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+              <button className="w-full md:w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 px-6 hover:text-black hover:scale-105 transition-all">
                 View Project
               </button>
             </a>
             <a href={project.githubRepo} target="_blank" rel="noreferrer">
-              <button className="w-full md:w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 hover:text-black hover:scale-105 transition-all">
+              <button className="w-full md:w-44 rounded-xl h-12 bg-gray-700 text-white m-2 dark:bg-slate-800 drop-shadow-lg hover:bg-yellow-600 px-6 hover:text-black hover:scale-105 transition-all">
                 View Code
               </button>
             </a>
