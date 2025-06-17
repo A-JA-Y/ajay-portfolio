@@ -88,8 +88,8 @@ function Projects() {
       projectName: "AI•AnimeArt•Generator",
       projectDescription:
         "A web application that uses Gemini AI to generate anime-style artwork.",
-      projectLink: "https://a-ja-y.github.io/AI-AnimeArt-Generator/",
-      githubRepo: "https://github.com/A-JA-Y/AI-AnimeArt-Generator",
+      projectLink: "https://ai-image-generation-zeta.vercel.app/",
+      githubRepo: "https://github.com/A-JA-Y/ai-image-generation",
       projectImage: nine,
       projectTags: ["HTML", "CSS", "Javascript","Next Js", "Gemini AI", "Rest-API"],
     },
