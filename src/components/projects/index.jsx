@@ -100,7 +100,7 @@ function Projects() {
       projectLink: "https://itzajay.live/",
       githubRepo: "https://github.com/A-JA-Y/",
       projectImage: ten,
-      projectTags: ["taech stack will be attached here", "soon", "stay tuned!."],
+      projectTags: ["tech stack will be attached here", "soon,", "stay tuned!."],
     }
   ];
 
