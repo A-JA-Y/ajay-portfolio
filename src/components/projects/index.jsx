@@ -119,11 +119,14 @@ function Projects() {
             <h2 className="text-2xl md:text-3xl font-bold text-center my-2">
               {project.projectName}
             </h2>
+            <div className=" project-image mb-4 flex justify-center items-center overflow-hidden rounded-xl  drop-shadow-md shadow-zinc-500 shadow-md">
+
             <img
               src={project.projectImage}
               alt={project.projectName}
-              className="w-[30em] h-[10em] max-w-xs rounded-xl hover:scale-95 transition-transform"
+              className="w-[30em] h-[10em] max-w-xs rounded-xl  hover:scale-110  transition-transform duration-300 ease-in-out"
             />
+            </div>
             <p className="my-1 text-center leading-relaxed">
               {project.projectDescription}
             </p>
