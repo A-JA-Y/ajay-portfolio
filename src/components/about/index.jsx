@@ -1,4 +1,5 @@
 import React from "react";
+import '../../style.css';
 import {
   FaTwitter,
   FaLinkedin,
@@ -19,9 +20,9 @@ function About() {
         <h1 className="text-center py-4 mb-4 text-3xl sm:text-5xl font-extrabold">
           About Me
         </h1>
-        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-3">
+        <div className="container mx-auto flex flex-col lg:flex-row  items-center justify-center pb-3">
           <div className="w-full lg:w-3/5">
-            <div className="intro p-5 text-sm sm:text-base">
+            <div className="intro p-5 text-sm sm:text-base left-animation">
               <p>
                 "Hello, I'm <i>Ajay</i>, a dedicated undergraduate student
                 residing in Greater Noida, Uttar Pradesh. Currently studying at
@@ -65,7 +66,7 @@ function About() {
           </div>
           <hr className="hidden lg:block lg:h-64 lg:w-1 border-black bg-black bg-opacity-30 mx-4 rounded-full" />
           <div className="right w-full lg:w-2/5 p-4">
-            <div className="skills flex flex-col items-center justify-center">
+            <div className="skills flex flex-col items-center justify-center right-animation">
               <h2 className="text-2xl sm:text-4xl font-bold drop-shadow-md my-2">
                 Skills
               </h2>

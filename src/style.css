@@ -1,0 +1,27 @@
+.left-animation {
+  opacity: 0;
+  transform: translateX(-90px);
+  animation: slideInLeft 0.5s forwards;
+  animation-timeline: view(450px 10px);
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.right-animation {
+  opacity: 0;
+  transform: translateX(90px);
+  animation: slideInRight 0.5s forwards;
+  animation-timeline: view(450px 10px);
+}
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
