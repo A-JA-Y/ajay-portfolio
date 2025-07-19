@@ -24,7 +24,7 @@ function About() {
           <div className="w-full lg:w-3/5">
             <div className="intro p-5 text-sm sm:text-base left-animation">
               <p>
-                "Hello, I'm <i>Ajay</i>, a dedicated undergraduate student
+                "Hello, I'm <i>Ajay</i>, a dedicated graduate student
                 residing in Greater Noida, Uttar Pradesh. Currently studying at
                 PIIT Greater Noida, affiliated with CCS University, Meerut, I
                 have a strong passion for technology and software development.{" "}
