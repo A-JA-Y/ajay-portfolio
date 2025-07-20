@@ -4,10 +4,9 @@ import Home from "./components/home";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Top from "./components/wa-top-btn/toTop";
 import WaMe from "./components/wa-top-btn/whatsapp"
-import { initScrollAnimations } from "./animations";
 
 
 function App() {
@@ -20,12 +19,6 @@ function App() {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  // Initialize scroll animations when component mounts
-  useEffect(() => {
-    initScrollAnimations();
-  }, []);
-
   return (
     <>
       <Navbar className="sticky-navbar" scrollToSection={scrollToSection} refs={{aboutRef,projectRef,contactRef}} />
