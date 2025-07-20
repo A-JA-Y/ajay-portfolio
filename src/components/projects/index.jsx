@@ -9,6 +9,7 @@ import seven from "../../assets/seven.png";
 import eight from "../../assets/eight.png";
 import nine from "../../assets/nine.png";
 import ten from "../../assets/ten.png";
+import '../../style.css'
 
 function Projects() {
   const projects = [
@@ -114,7 +115,7 @@ function Projects() {
           <div
             key={index}
             className="project relative bg-gray-300 dark:bg-zinc-700 p-4 m-2 rounded-2xl shadow-inner
-                       hover:shadow-xl transition-shadow flex flex-col items-center"
+                       hover:shadow-xl transition-shadow flex flex-col items-center project-popup-animation"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-center my-2">
               {project.projectName}
@@ -124,7 +125,7 @@ function Projects() {
             <img
               src={project.projectImage}
               alt={project.projectName}
-              className="w-[30em] h-[10em] max-w-xs rounded-xl  hover:scale-110  transition-transform duration-300 ease-in-out"
+              className="w-[30em] h-[10em] max-w-xs rounded-xl  hover:scale-110  transition-transform duration-300 ease-in-out "
             />
             </div>
             <p className="my-1 text-center leading-relaxed">

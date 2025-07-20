@@ -32,7 +32,7 @@
   opacity: 0;
   transform: translateX(-10px);
   animation: slideInLeft 0.5s forwards;
-  animation-timeline: view(450px 10px);
+  animation-timeline: view();
 }
 
 @keyframes slideInLeft {
@@ -46,7 +46,7 @@
   opacity: 0;
   transform: translateX(10px);
   animation: slideInRight 0.5s forwards;
-  animation-timeline: view(450px 10px);
+  animation-timeline: view();
 }
 @keyframes slideInRight {
   to {
@@ -54,5 +54,19 @@
     transform: translateX(0);
   }
 }
+}
+
+.project-popup-animation{
+  opacity: 0;
+  scale: 0.1;
+  animation: popup 0.5s forwards;
+  animation-timeline: view(450px 10px);
+}
+
+@keyframes popup{
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
