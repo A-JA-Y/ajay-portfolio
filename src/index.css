@@ -1,4 +1,6 @@
+html, body {
+  overflow-x: visible !important; /* Forces visibility */
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
