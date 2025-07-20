@@ -7,6 +7,7 @@ import Contact from "./components/contact";
 import { useRef } from "react";
 import Top from "./components/wa-top-btn/toTop";
 import WaMe from "./components/wa-top-btn/whatsapp"
+import './style.css';
 
 
 function App() {

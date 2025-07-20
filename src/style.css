@@ -1,3 +1,6 @@
+html, body {
+  overflow-x: visible !important; /* Forces visibility */
+}
 .left-animation {
   opacity: 0;
   transform: translateX(-90px);
