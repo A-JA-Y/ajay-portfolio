@@ -1,5 +1,5 @@
-html, body {
-  overflow-x: visible !important; /* Forces visibility */
+/* html, body {
+  overflow-x: visible !important; 
 }
 .left-animation {
   opacity: 0;
@@ -29,7 +29,7 @@ html, body {
 }
 
 
-/* same animation in phones */
+
 @media (max-width: 640px) {
   .left-animation {
   opacity: 0;
@@ -72,4 +72,4 @@ html, body {
     scale: 100%;
   }
 }
-
+ */

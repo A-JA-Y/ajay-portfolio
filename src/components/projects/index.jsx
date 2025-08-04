@@ -9,7 +9,8 @@ import seven from "../../assets/seven.png";
 import eight from "../../assets/eight.png";
 import nine from "../../assets/nine.png";
 import ten from "../../assets/ten.png";
-import '../../style.css'
+// import '../../style.css';
+import { motion } from "motion/react"
 
 function Projects() {
   const projects = [
@@ -112,7 +113,13 @@ function Projects() {
       </h1>
       <div className="projects grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
         {projects.map((project, index) => (
-          <div
+          <motion.div initial={{ transform: "translateX(50px)", opacity: 0 }}
+  whileInView={{ transform: "translateX(0)", opacity: 1 }}
+  viewport={{ 
+    once: false,    
+    amount: 0.3,     
+    margin: "-50px" 
+  }}
             key={index}
             className="project relative bg-gray-300 dark:bg-zinc-700 p-4 m-2 rounded-2xl shadow-inner
                        hover:shadow-xl transition-shadow flex flex-col items-center project-popup-animation"
@@ -153,7 +160,7 @@ function Projects() {
                 View Code
               </button>
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
