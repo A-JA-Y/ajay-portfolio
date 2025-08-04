@@ -113,7 +113,7 @@ function Projects() {
       </h1>
       <div className="projects grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
         {projects.map((project, index) => (
-          <motion.div initial={{ transform: "translateX(50px)", opacity: 0 }}
+          <motion.div initial={{ transform: "translateX(10px)", opacity: 0 }}
   whileInView={{ transform: "translateX(0)", opacity: 1 }}
   viewport={{ 
     once: false,    
