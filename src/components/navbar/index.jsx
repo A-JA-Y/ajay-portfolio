@@ -24,26 +24,26 @@ export default function Navbar({ scrollToSection, refs }) {
           <div className="navItems flex items-center justify-center">
             <div className="logo">
               <h1
-                className="text-4xl font-bold my-2 font-mono mx-6 transition-all hover:cursor-none "
+                className="text-4xl font-bold my-2 mx-6 transition-all hover:cursor-none "
                 ref={el}
               ></h1>
             </div>
             <div className="navLinks hidden lg:flex ">
               <ul className="flex justify-end">
                 <li
-                  className="my-2 mx-3 text-xl drop-shadow-md  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  className="my-2 mx-3 text-xl drop-shadow-md  hover:cursor-pointer hover:text-yellow-600 transition-all"
                   onClick={() => scrollToSection(refs.aboutRef)}
                 >
                   About
                 </li>
                 <li
-                  className="my-2 mx-3 text-xl drop-shadow-md  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  className="my-2 mx-3 text-xl drop-shadow-md  hover:cursor-pointer hover:text-yellow-600 transition-all"
                   onClick={() => scrollToSection(refs.projectRef)}
                 >
                   Projects
                 </li>
                 <li
-                  className="my-2 mx-3 text-xl drop-shadow-md  font-mono hover:cursor-pointer hover:text-yellow-600 transition-all"
+                  className="my-2 mx-3 text-xl drop-shadow-md  hover:cursor-pointer hover:text-yellow-600 transition-all"
                   onClick={() => scrollToSection(refs.contactRef)}
                 >
                   Contact

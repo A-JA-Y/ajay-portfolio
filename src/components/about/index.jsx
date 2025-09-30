@@ -1,5 +1,5 @@
 import React from "react";
-import '../../style.css';
+
 import {
   FaTwitter,
   FaLinkedin,
@@ -16,7 +16,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 function About() {
   return (
     <>
-      <div className="about w-full bg-slate-300 dark:bg-zinc-800 dark:text-white rounded-md font-mono py-6 px-4">
+      <div className="about w-full bg-slate-300 dark:bg-zinc-800 dark:text-white rounded-md  py-6 px-4">
         <h1 className="text-center py-4 mb-4 text-3xl sm:text-5xl font-extrabold">
           About Me
         </h1>

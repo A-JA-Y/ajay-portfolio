@@ -6,8 +6,8 @@ import Projects from "./components/projects";
 import Contact from "./components/contact";
 import { useRef } from "react";
 import Top from "./components/wa-top-btn/toTop";
-import WaMe from "./components/wa-top-btn/whatsapp"
-import './style.css';
+import WaMe from "./components/wa-top-btn/whatsapp";
+
 
 
 function App() {
@@ -22,6 +22,8 @@ function App() {
   };
   return (
     <>
+    
+
       <Navbar className="sticky-navbar" scrollToSection={scrollToSection} refs={{aboutRef,projectRef,contactRef}} />
       <Home/>
       <div ref={aboutRef}>
@@ -35,6 +37,7 @@ function App() {
       </div>
       <Top/>
       <WaMe/>
+
 
     </>
   );

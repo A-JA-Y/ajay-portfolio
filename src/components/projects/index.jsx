@@ -9,7 +9,6 @@ import seven from "../../assets/seven.png";
 import eight from "../../assets/eight.png";
 import nine from "../../assets/nine.png";
 import ten from "../../assets/ten.png";
-// import '../../style.css';
 import { motion } from "motion/react"
 
 function Projects() {
@@ -107,7 +106,7 @@ function Projects() {
   ];
 
   return (
-    <div className="min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white my-1 rounded-md font-mono py-6 px-4">
+    <div className="min-w-full bg-slate-300 dark:bg-zinc-800 dark:text-white my-1 rounded-md  py-6 px-4">
       <h1 className="text-center py-4 mb-4 text-3xl md:text-5xl font-extrabold">
         Projects
       </h1>
@@ -144,8 +143,8 @@ function Projects() {
                   key={i}
                   className="mx-1 my-1 text-sm md:text-xl font-medium leading-relaxed"
                 >
-                  <ol className="   text-gray-600 dark:text-gray-300">
-                    <li >{tag}</li>
+                  <ol className="  bg-gray-100  px-2 text-gray-600 ">
+                    <li > #{tag}</li>
                   </ol>
                 </span>
               ))}
