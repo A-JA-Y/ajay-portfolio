@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 const Home = () => {
 
   const downloadCv = () => {
-    window.open("https://storage.googleapis.com/matrix-assessment-user/resume/dpsuser303b462d-c050-42d2-b58d-ac32d3aedb75/6597ebb8-0834-45d0-ab9c-8a5d0472f2f5.pdf", "_blank");
+    window.open("https://wwr-pro.s3.amazonaws.com/job_seeker/resume_upload/1007540/Ajay_Kumar_12_11_25__1_.pdf", "_blank");
   }
   const el = React.useRef(null);
 
